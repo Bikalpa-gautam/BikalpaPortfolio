@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Include Lightbox CSS and JavaScript -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Welcome to My Personal Website</h1>
+            <p>Explore my work and let's connect!</p>
+            <button><a href="#contact">Contact Me</a></button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p>My name is [Your Name]. I am a [Your Profession/Title] based in [Location]. I specialize in [Your Specialization], and I'm passionate about [Your Passion].</p>
+                <img src="assets/your-photo.jpg" alt="Your Name" class="profile-photo">
+                <p>In my spare time, I enjoy [Your Hobbies/Interests]. I'm always open to new opportunities and collaborations, so feel free to reach out!</p>
+                <!-- Embedded Video -->
+                <div class="embedded-video">
+                    <h3>My Introduction Video</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/[Your Video URL]" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section portfolio-section">
+            <div class="section-content">
+                <h2>Portfolio</h2>
+                <p>Here are some of my recent projects:</p>
+                <div class="projects">
+                    <!-- Project 1 -->
+                    <div class="project">
+                        <img src="assets/project1.jpg" alt="Project 1" class="project-image">
+                        <h3>Project 1</h3>
+                        <p>Description of Project 1.</p>
+                        <a href="#project1-modal" class="button modal-trigger">View Details</a>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project">
+                        <img src="assets/project2.jpg" alt="Project 2" class="project-image">
+                        <h3>Project 2</h3>
+                        <p>Description of Project 2.</p>
+                        <a href="#project2-modal" class="button modal-trigger">View Details</a>
+                    </div>
+                    <!-- Add more projects as needed -->
+
+                    <!-- Project Modal Dialogs -->
+                    <!-- Modal for Project 1 -->
+                    <div id="project1-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <h3>Project 1 Details</h3>
+                            <p>More information about Project 1.</p>
+                            <!-- Lightbox Gallery -->
+                            <div class="gallery">
+                                <a href="assets/project1-1.jpg" data-lightbox="project1" data-title="Image 1"><img src="assets/project1-1-thumbnail.jpg" alt="Image 1"></a>
+                                <a href="assets/project1-2.jpg" data-lightbox="project1" data-title="Image 2"><img src="assets/project1-2-thumbnail.jpg" alt="Image 2"></a>
+                                <!-- Add more images as needed -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal for Project 2 -->
+                    <div id="project2-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <h3>Project 2 Details</h3>
+                            <p>More information about Project 2.</p>
+                            <!-- Lightbox Gallery -->
+                            <div class="gallery">
+                                <a href="assets/project2-1.jpg" data-lightbox="project2" data-title="Image 1"><img src="assets/project2-1-thumbnail.jpg" alt="Image 1"></a>
+                                <a href="assets/project2-2.jpg" data-lightbox="project2" data-title="Image 2"><img src="assets/project2-2-thumbnail.jpg" alt="Image 2"></a>
+                                <!-- Add more images as needed -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more modals for additional projects -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-content">
+                <h2>Contact Me</h2>
+                <p>Feel free to get in touch using the form below:</p>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+        <!-- Interactive Section -->
+<section id="interactive" class="section interactive-section">
+    <div class="section-content">
+        <!-- Testimonials Carousel -->
+        <div class="testimonials">
+            <h2>What Clients Say</h2>
+            <div class="testimonial-carousel">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-item">
+                    <p>"[Client Testimonial 1]"</p>
+                    <h4>— [Client Name 1]</h4>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-item">
+                    <p>"[Client Testimonial 2]"</p>
+                    <h4>— [Client Name 2]</h4>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-item">
+                    <p>"[Client Testimonial 3]"</p>
+                    <h4>— [Client Name 3]</h4>
+                </div>
+                <!-- Add more testimonial items as needed -->
+            </div>
+        </div>
+
+        <!-- Newsletter Sign-Up -->
+        <div class="newsletter">
+            <h2>Subscribe to My Newsletter</h2>
+            <form id="newsletter-form">
+                <label for="newsletter-email">Email:</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <!-- Blog Preview -->
+        <div class="blog-preview">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-posts">
+                <!-- Blog Post 1 -->
+                <div class="blog-post">
+                    <h3>Blog Post 1</h3>
+                    <p>[Preview of Blog Post 1]</p>
+                    <a href="#">Read More</a>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="blog-post">
+                    <h3>Blog Post 2</h3>
+                    <p>[Preview of Blog Post 2]</p>
+                    <a href="#">Read More</a>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="blog-post">
+                    <h3>Blog Post 3</h3>
+                    <p>[Preview of Blog Post 3]</p>
+                    <a href="#">Read More</a>
+                </div>
+                <!-- Add more blog posts as needed -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Bikalpa. All rights reserved.</p>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/yourusername" target="_blank" class="social-button">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/yourusername" target="_blank" class="social-button">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <!-- Add more social media links as needed -->
+        </ul>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
